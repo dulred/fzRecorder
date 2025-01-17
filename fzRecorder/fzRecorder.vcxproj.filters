@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{18d1a5d1-f203-4533-adfe-621d195ab591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\dump">
+      <UniqueIdentifier>{1cda6c12-0409-425f-8d25-5bd4256712cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\log">
+      <UniqueIdentifier>{17270474-f555-4547-a59b-9d3d2f8d31c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\util">
+      <UniqueIdentifier>{f32c67e7-af7a-4544-99cb-e6a633c67d52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\fzRecorder">
+      <UniqueIdentifier>{edae5389-4fcb-4e04-a01c-863d20e38f84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\fzRecorder\UI">
+      <UniqueIdentifier>{7da2643f-2c05-4ee9-8f37-0db0f7e67bf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\fzRecorder\model">
+      <UniqueIdentifier>{cc35ca25-929c-4b04-9c0d-b201c4bf91be}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fzRecorder.cpp">
+      <Filter>src\fzRecorder\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\dump\dump.cpp">
+      <Filter>src\common\dump</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\util\util.cpp">
+      <Filter>src\common\util</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>src\fzRecorder</Filter>
+    </ClCompile>
+    <ClCompile Include="model\AppData.cpp">
+      <Filter>src\fzRecorder\model</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="fzRecorder.h">
+      <Filter>src\fzRecorder\UI</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\dump\dump.h">
+      <Filter>src\common\dump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\log\log.h">
+      <Filter>src\common\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\util\util.h">
+      <Filter>src\common\util</Filter>
+    </ClInclude>
+    <ClInclude Include="model\AppData.h">
+      <Filter>src\fzRecorder\model</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="fzRecorder.ui">
+      <Filter>src\fzRecorder\UI</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="fzRecorder.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="..\res\fzRecorder.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+  </ItemGroup>
+</Project>
