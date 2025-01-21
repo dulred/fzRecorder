@@ -7,7 +7,7 @@ Revezone is currently in a public beta. Please report a [issue](https://github.c
 ---
 Screen recording software based on QT + FFmpeg.
 
-![](screenshot\ui.png)
+![](screenshot/sfa.png)
 ## Process
 
 Main thread: UI thread, calling the Recorder interface
